@@ -11,10 +11,10 @@ using namespace std;
 #define vb vector<bool>
 #define pb push_back
 
-#define pii pair<int,int>
-#define vip vector<pair<int,int>>
+#define pii pair<int, int>
+#define vip vector<pair<int, int>>
 #define m_p make_pair
-#define mii map<int,int>
+#define mii map<int, int>
 
 #define ff first
 #define ss second
@@ -28,45 +28,55 @@ using namespace std;
 
 #define ign cin.ignore()
 #define getln(s) getline(cin, s)
-#define fli(n) for(int i=0; i<n; i++)
-#define rfli(n) for(int i=n-1; i>=0; i--)
-#define flj(n) for(int j=0; j<n; j++)
+#define fli(n) for (int i = 0; i < n; i++)
+#define rfli(n) for (int i = n - 1; i >= 0; i--)
+#define flj(n) for (int j = 0; j < n; j++)
 
 #define eps (double)(1e-7)
 #define pi (double)(acos(-1))
 #define gcd(a, b) __gcd(a, b)
 #define lcm(a, b) (a * b) / __gcd(a, b)
-#define mod (ll)(1e9+7)
+#define mod (ll)(1e9 + 7)
 
-#define case cout<<"Case "<<k<<": "
-#define yes cout<<"YES\n"
-#define no cout<<"NO\n"
+#define case cout << "Case " << k << ": "
+#define yes cout << "YES\n"
+#define no cout << "NO\n"
 #define endl "\n"
 int k;
 
+/*= = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-/*= = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-
-                    Code Start From Here                    
+                    Code Start From Here
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-
 void solve()
 {
-    
+    int n;
+    cin >> n;
+    if (n == 2)
+        cout << 10 << endl;
+    else if (n == 4)
+        cout << 670 << endl;
+    else if (n == 6)
+        cout << 55252 << endl;
+    else
+        cout << 4816030 << endl;
 }
 
-int main() {
-    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
 
-    ll test=1;
-    //cin>>test;
-    for(k=1; k<=test; k++)
+    ll test = 1;
+    // cin>>test;
+    for (k = 1; k <= test; k++)
     {
         solve();
     }
